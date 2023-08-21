@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <main>
+
+        <section class="faq-container">
+            <div class="faq-one">
+                <div class="nav-wrapper"> 
+                    <div class="left-side"> 
+                        <div class="nav-link-wrapper">
+                            <a href="http://localhost:2000/index.html">Home</a>
+                        </div>    
+                        <div class="nav-link-wrapper">
+                            <a href="http://localhost:2000/faq.html">FAQ</a>
+                        </div>
+                        <div class="nav-link-wrapper">
+                            <a href="http://127.0.0.1:3000">LOG IN</a>
+                        </div>
+                        <div class="nav-link-wrapper">
+                            <a href=" http://127.0.0.1:3000">SIGN UP</a>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                      <div class="brand">
+                        <img src = "/images/logo.png" style="height:70px">
+                      </div>
+                    </div>
+                </div>
+                <h1 class="faq-heading">FAQ'S</h1>
+        
+                <!-- faq question -->
+                <h1 class="faq-page">Is it a multiplayer game?</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>No, its a single player game. You will be playing against the computer!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+
+            <div class="faq-two">
+
+                <!-- faq question -->
+                <h1 class="faq-page">How to play Tic Tac Toe?</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Get three X's or O's in a row !</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+            <div class="faq-three">
+
+                <!-- faq question -->
+                <h1 class="faq-page">How to play Rock Paper Scissors?</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>Rock beats Scissors!
+                        Scissors beat Paper!
+                        Paper beats Rock!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+
+            <div class="faq-four">
+
+                <!-- faq question -->
+                <h1 class="faq-page">How to play Higher Lower?</h1>
+
+                <!-- faq answer -->
+
+                <div class="faq-body">
+                    <p>Try guessing a number that matches with the computer!</p>
+                </div>
+            </div>
+            <hr class="hr-line">
+
+
+
+            <div class="faq-five">
+
+                <!-- faq question -->
+<h1 class="faq-page">How to play Pong?</h1>
+
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Use paddles to hit the ball back and forth!</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="faq.js"></script>
+</body>
+
+    
+<style>
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.faq-heading{
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+.faq-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.hr-line{
+  width: 60%;
+  margin: auto;
+  
+}
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+
+}
+.faq-body{
+    margin: auto;
+    /* text-align: center; */
+   width: 50%; 
+   padding: auto;
+   
+}
+
+
+.nav-wrapper {
+    display : flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottomm 0.5s;
+}
+
+.nav-link-wrapper a {
+    color : #8a8a8a;
+    text-decoration : none;
+    transition : color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 3px solid rgb(0, 195, 255);
+}
+
+.nav-link-wrapper a:hover {
+    color : rgb(1, 124, 133);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.faq-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+</style>
+
+</html>
