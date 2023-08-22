@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <title>Pong Game JavaScript</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        </style>
+</head>
+<body>
+    <div class="nav-wrapper"> 
+        <div class="left-side">
+            
+            <div class="nav-link-wrapper">
+                <a href="/index.html">Home</a>
+            </div>    
+            <div class="nav-link-wrapper">
+                <a href="/faq.html">FAQ</a>
+            </div>    
+            <div class="nav-link-wrapper">
+                <a href="/about.html">About Us</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="/profile.html">Profile</a>
+            </div>
+        </div>
+    <div>
+            <div>
+                <input type = "image" class="btn" onclick="flag=!flag" src = "/images/play.png" width = "30px"></input>
+            </div>
+    </div>
+   <div class="container">
+        <canvas id="pong" width="600" height="400"></canvas>
+        <br><br>
+   </div>
+
+    <div class="container" style="display: none;">
+    </div>
+    <script src="score.js"></script>
+   <script src="pong.js"></script>
+</body>
+</html>
